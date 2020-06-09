@@ -1,0 +1,24 @@
+{"properties": [
+	{
+	  "name": "parser.json.dimension.area",
+	  "type": "java.lang.String",
+	  "description": "dataset area dimension name"
+	},
+	{
+	  "name": "parser.json.dimension.week",
+	  "type": "java.lang.String",
+	  "description": "dataset week dimension name"
+	},
+	{
+	  "name": "parser.json.url",
+	  "type": "java.lang.String",
+	  "description": "THL json  url"
+	},
+	{
+	  "name": "processor.update.data.cron",
+	  "type": "java.lang.String",
+	  "description": "cron for updating data task"
+	}
+
+
+]}

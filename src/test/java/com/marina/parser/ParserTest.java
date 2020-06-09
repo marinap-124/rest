@@ -30,7 +30,7 @@ public class ParserTest {
 
 	@Test
 	public void testJsonParsing() {
-		String json = loadXML(path);
+		String json = loadJson(path);
 		json = parser.modifyJson(json);
 		assertFalse(json.contains(Parser.STAT_VERSION));
 
@@ -42,7 +42,7 @@ public class ParserTest {
 		assertTrue(holder.cases.size() == 1188);
 	}
 
-	private String loadXML(String path) {
+	private String loadJson(String path) {
 
 		ClassLoader classLoader = getClass().getClassLoader();
 		try (InputStream inputStream = classLoader.getResourceAsStream(path)) {
