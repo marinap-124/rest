@@ -14,9 +14,13 @@ cd rest
 mvn clean install
 mvn spring-boot:run
 
+Api Documentation:
+http://localhost:8080/swagger-ui.html
+
 Use postman for testing
 
 Loads json from THL, parsers data and inserts to database.
+POST
 http://localhost:8080/init/data
 
 Load areas from db
