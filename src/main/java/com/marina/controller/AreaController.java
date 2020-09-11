@@ -31,14 +31,14 @@ public class AreaController {
 	AreaConverter areaConverter;
 
 
-	@ApiOperation(value = "load all areas from db", response = Iterable.class)
+	@ApiOperation(value = "Load all areas from db", response = Iterable.class)
 	@GetMapping(path = "/all")
 	public @ResponseBody Iterable<Area> getAllAreas() {
 
 		return areaRepo.findAll();
 	}
 
-	@ApiOperation(value = "get area", response = AreaDto.class)
+	@ApiOperation(value = "Load area by code", response = AreaDto.class)
 	@GetMapping(path = "/{code}", produces = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE })
 	public AreaDto getArea(@PathVariable final String code) {
 		
